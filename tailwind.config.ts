@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				urb: {
+					dark: '#1A1F2C',
+					purple: '#9b87f5',
+					'deep-purple': '#7E69AB',
+					accent: '#D6BCFA',
+					'soft-gray': '#F1F0FB',
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,28 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					from: { opacity: '0' },
+					to: { opacity: '1' }
+				},
+				'dice-roll': {
+					'0%': { transform: 'rotate(0deg)' },
+					'25%': { transform: 'rotate(90deg)' },
+					'50%': { transform: 'rotate(180deg)' },
+					'75%': { transform: 'rotate(270deg)' },
+					'100%': { transform: 'rotate(360deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-in',
+				'dice-roll': 'dice-roll 0.5s ease-in-out'
+			},
+			fontFamily: {
+				fantasy: ['Cinzel', 'serif'],
+				lore: ['Lora', 'serif']
 			}
 		}
 	},
